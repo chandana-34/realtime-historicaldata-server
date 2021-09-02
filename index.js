@@ -18,7 +18,7 @@ require('dotenv').config();
 
 const password = process.env.password;
 const database = 'edyodaDB';
-const connectingString = `mongodb+srv://dbMitansh:${password}@cluster1.dkwws.mongodb.net/${database}?retryWrites=true&w=majority`;
+const connectingString = `mongodb+srv://dbchandana:${password}@cluster1.dkwws.mongodb.net/${database}?retryWrites=true&w=majority`;
 const options = {
     useUnifiedTopology: true,
     useNewUrlParser: true
@@ -44,7 +44,7 @@ async function addSensorData(){
 }
 
 app.get('/', (req,res) => {
-    res.send('mitansh!!')
+    res.send('chandana!!')
 })
 
 app.get('/delete', async (req,res) =>{
